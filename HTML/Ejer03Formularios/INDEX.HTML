@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html  lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>Laboratorio III</title>
+	</head>
+
+
+	<body>
+		<h1>	Formulario para entradas sin validación	</h1>
+
+		<form  action="http://localhost/web2/LaboratorioUTN/html/Ejer03Formularios/respuesta.html" method="get">
+				<ul>
+				<li style="margin-top:10px"> <label style="font-weight: bold" for="Apellido" > Apellido: </label> 
+				<br />
+		
+				<input type="text" placeholder="Ingrese su Apellido" id="Apellido" name="Apellido" autofocus="autofocus" /> <br />
+			</li>
+
+				<li style="margin-top:10px"> <label style="font-weight: bold" for="contraseña"> Contraseña </label>
+				<br />
+		
+				<input type="password" placeholder="Ingrese su Contraseña" id="contraseña" name="contraseña" /> <br />
+			</li>
+				<li style="margin-top:10px"> <label style="font-weight: bold" for="oculto"> Oculto </label>
+				<br />
+			
+				<input type="hidden" id="oculto" name="oculto"/>
+			</li>
+				<li style="margin-top:10px"> <label style="font-weight: bold" for="Deshabilitado"> Campo Deshabilitado </label>
+				<br />
+				<input type="text" placeholder="Campo Deshabilitado" id="Deshabilitado" disabled="" name="contraseña" /> <br />
+			</li>
+				</li>
+				<li style="margin-top:10px"> <label style="font-weight: bold" for="oculto"> Campo solo lectura </label>
+				<br />
+				<input type="text" placeholder="Valor solo lectura" id="" name="" readonly="" /> <br />
+			</li>
+				<li style="margin-top:10px"> <label style="font-weight: bold" for="deporte"> Practica deporte </label>
+				<br />
+				<input type="checkbox" id="deporte" name="contraseña" /> <br />
+			</li>
+				<li style="margin-top:10px"> <label style="font-weight: bold" for="musica"> Practica musica </label>
+				<br />
+				<input type="checkbox" id="musica" name="" /> <br />
+			</li>
+				<li style="margin-top:10px"> <label style="font-weight: bold" for="pintura"> Practica de pintura artistica </label>
+				<br />
+				<input type="checkbox" id="pintura" name="" /> <br />
+			</li>
+				<li style="margin-top:10px"> <label style="font-weight: bold" for="sexo"> Sexo </label>
+				<br />
+				<label style="font-weight: bold" for="masculino">Masculino</label>
+				<input type="radio" id="femenino " name="sexo" value="M" checked="checked"/>
+				<label style="font-weight: bold" for="masculino">Femenino</label>
+				<input type="radio" id="masculino" name="sexo" value="F" />
+				<br />
+
+			</li>
+					<li style="margin-top:10px"><label style="font-weight: bold" for="Estudios">Estudios</label><br />
+				<select id="estudios" name="Estudios">
+					<option value="pri" selected="selected" >Primarios</option>
+					<option value="sec">Secundarios</option>
+					<option value="ter">Terciarios</option>
+					<option value="pos">Posgrado</option>
+				</select><br />
+
+			
+
+				<li style="margin-top:10px"><label style="font-weight: bold" for="fecha">Fecha y Hora</label><br />
+				<input type="date" name="fecha"><input type="time" name="time"><br /></li>
+
+				<li style="margin-top:10px"><label style="font-weight: bold" for="fecha">Color</label><br />
+				<input type="color" name="color"></li>
+
+					<li style="margin-top:10px"> <input type="submit" value="Enviar formulario sin validación" >
+						
+						</li>
+
+					<li style="margin-top:10px"><input type="reset" value="Reset a valores predeterminados">
+
+						</li>
+
+				</ul>
+		</form>
+		<hr/>
+		
+
+				<h1>	Formulario para entradas con validación	</h1>
+
+		<form action="http://localhost/web2/LaboratorioUTN/html/Ejer03Formularios/respuesta.html" method="get">
+		<ul>
+				<li style="margin-top:10px"> <label style="font-weight: bold" for="Comentario" > Comentario: </label> 
+				<br />
+		
+				<input type="text" placeholder="Ingrese un texto" id="Comentario" name="c" required=required  /> <br />
+			</li>
+
+				<li style="margin-top:10px"> <label style="font-weight: bold" for="mail"> Email con doble validacion </label>
+				<br />
+		
+				<input type="Email" placeholder="EJ:google@gmail.com" id="mail" name="mail" required=required /> <br />
+			</li>
+				<li style="margin-top:10px"> <label style="font-weight: bold" for="oculto"> Numero Entero </label>
+				<br />
+			
+				<input type="number" min="1" max="5" name="numeroEntero" required=required />
+			</li>
+			<li style="margin-top:10px"> <label style="font-weight: bold" for="numeroReal"> Numero Decimal </label>
+				<br />
+			
+				<input type="number" min="0" max="9" name="numeroReal" step="0.5" required=required/>
+			</li>
+				
+			
+				<li style="margin-top:10px"> <label style="font-weight: bold" for="url"> Pagina Web </label>
+				<br />
+				<input type="url" id="url" name="sitio" placeholder="http://xxx" required=required />
+			</li>
+
+			<li style="margin-top:10px"> <label style="font-weight: bold" for="url"> Pattern de Validación: </label>
+				<br />
+				<input type="text" pattern="[a-z]{3}[1-2]{2}" name="mascara" title="3 letras y dos numeros que sean 1 o 2 solamente required=required"/>
+			</li>
+
+				<li style="margin-top:10px"> <label style="font-weight: bold" for="url"> Pattern de Validación: </label>
+				<br />
+				<input type="text" pattern="[(+54)11]{7} [0-9]{8}" id="url" name="sitio" placeholder="(+54)1188888888" required=required />
+		
+		
+		<li style="margin-top:10px"> <input type="submit" value="Enviar formulario con validación" >
+						
+						</li>
+
+					<li style="margin-top:10px"><input type="reset" value="Reset a valores predeterminados">
+
+						</li>
+
+			</li>
+
+		</ul>
+		</form>
+		
+		<ul>
+			<li>	<a href="http://localhost/web2/LaboratorioUTN/html/INDEX.HTML" > Volver </a></li>
+
+		</ul>
+
+	</body>
+
+</html>
