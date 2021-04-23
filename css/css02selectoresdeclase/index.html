@@ -5,13 +5,91 @@
 	<head>
 		<TITLE>Css 02 Selectorde Clase</TITLE>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />    
+        <style>
+            p.clase0{
+                width: 100%;
+                text-align:center;
+                font: size 18px;
+                color:darkred;
+                font-style: oblique;
+                border-style: solid;
+                border-width: thin;
+                border-color:red;
+                margin-top: 50px;
+                margin-bottom: 80px;
+                margin-bottom: 80px;
+            }
+            #claseuniversal{
+            color:black;
+            font-style: unset;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 80px;
+            }
+          
+            p.clase1
+            { text-align: center;
+            width: 50%;
+            border-color:silver;
+            border-style: solid; 
+            margin-bottom: 80px;
+            }
+
+            p.clase2
+            { text-align: center;
+            width: 25%;
+            border-color:blue;
+            border-style: solid; 
+            margin-bottom: 80px;
+            }
+            p.clase3
+            {   font-size: 15px;
+                margin-bottom: 80px;
+            }
+            img.saleen50
+            {width: 50%;
+
+            }
+            img.saleen10
+            {width: 10%;
+
+            }
+
+
+        </style>
 	</head>
 
+    <body >
+        <h1 >Ejercicio 2 de Laboratorio III </h1>
+        <h2 >Turno noche </h2>
 
-	<body >
-	
+        <p>Este parrafo contiene a la etiqueta Span ---> <span id="claseuniversal">cambia de tamaño y se transforma en negrita </span></p>
 
-		
+        <p class="clase0">zarazarazazazaszarazazazaszarazazazaszarazazazaszarazazazaszarazazazasza
+            razazazaszarazazazaszarazazazaszarazazazaszarazazazaszarazazazaszarazazazaszarazazazaszaraz
+            zazaszarazazazaszarazazazaszarazazazaszarazazazaszarazazazaszarazazazaszarazazazaszarazazazaszarazazazaszarazazazasz
+            arazazazaszarazazazas   za</p>
+
+        <p id="claseuniversal">Vuelvo a tomar el stylo </p>
+
+        <p class="clase1">Aca se puede ver como el borde solamente ocupa el 50% de la pantalla<br/>
+            lalalalalalalalalalalala(8)
+        </p>
+        <p class="clase3">En este estilo solo se le da tamaño, Luego de eso queda todo de fabrica</p>
+
+        <p class="clase2">Aca se puede ver como el borde solamente ocupa el 25% de la pantalla<br/>
+            jijijijiji(8)
+        </p>
+        <h1>Todas las imagenes al %50</h1>
+        <img src="./imagen.jpg" class="saleen50"> 
+
+        <h1>Todas las imagenes al %10</h1>
+        <img src="./monedas.jpg" class="saleen10"> <br/>
+        <br/>
+        <br/>
+        <a href="../index.html" > Volver </a>
+
+
 	</body>
 
 </html>
