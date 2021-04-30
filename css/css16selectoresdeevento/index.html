@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html  lang="es">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>Css 16 Selectores De Evento</title>
+	<style>
+
+div.cero
+{ margin: auto;
+width: 80%;
+height: 600px   ;
+background-color: lightblue;
+
+}
+div.btopcion {/* <-----------------PARTE DE OPCIONES!!!!---------------->*/
+height: 100px;
+width: 100px;
+background-color: grey;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+float:left;
+}
+#a:active
+{background-color: black;}
+div.btopcion:hover
+{background-color: red;}
+
+input {/* <-----------------PARTE DE INPUT!!!!---------------->*/
+display:block;
+width:150px;
+margin-bottom: 25px;}
+
+input:focus {
+background-color:#11111111;
+} 
+
+div.imagen/* <-----------------PARTE DE IMAGEN!!!!---------------->*/
+{   height: 100px;
+    width: 100px;
+    float:left;
+    border:solid sienna;
+    border-width: 2px;
+}
+
+img{
+max-width:100%;
+max-height:100%;
+}
+
+div.imagen:active
+{width: 300px;
+height: 300px;
+}
+    </style>
+    </head>
+	<body >
+		<div class="cero">
+            <div class="btopcion" id="a" >
+             <a href="respuesta.html">opcion 1</a>
+            </div> 
+            <div class="btopcion" id="a">
+                <a href="respuesta2.html">opcion 2</a>
+            </div> 
+            <div class="btopcion" id="a">
+                <a href="respuesta3.html">opcion 3</a>           
+                
+            </div>  
+            <div style="clear: both;"></div> 
+            <label style="font-weight: bold" for="apellido">Apellido</label>
+            <input class="input" type="text" id="apellido"  />
+            <br/>
+            <label style="font-weight: bold" for="nombres">Nombres</label>
+            <input class="input" type="text" id="nombres"  />
+           
+            <div class="imagen"> <img class="img" src="homero.jpg"  > </div>
+            <div class="imagen"> <img class="img" src="imagen.jpg"  > </div>
+            <div class="imagen"> <img class="img" src="velez2.jpg"  > </div>
+          
+
+        </div>
+        <center><a href="../index.html" > Volver </a></center>
+		
+	
+	
+	</body>
+
+</html>

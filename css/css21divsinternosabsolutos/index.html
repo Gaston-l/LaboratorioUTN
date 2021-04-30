@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html  lang="es">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>Laboratorio III</title>
+        <style>
+html, body {
+height:100%;
+margin:0px;
+background-color: rgb(253, 0, 0)  ;
+}
+
+div.cero/* div externo*/
+{   height: 100%;
+    margin:auto;
+    width: 90%;
+    overflow: auto;
+    background: rgb(128, 179, 255);
+}
+
+div.clase3 {
+position:absolute;
+background-color: rgb(226, 140, 248)  ;
+top:20%;
+left:40%;
+width:20%;
+height:300px;;
+opacity:0.5;    
+overflow:auto;
+font-size:1vw;/*La letra responsiva o escalable(1% respecto al viewport). */
+z-index: 3; /*queda por encima del 2*/
+}
+div.clase1 {
+position:absolute;
+background-color: rgb(248, 241, 140)  ;
+top:30%;
+width:20%;
+height:300px;
+font-size: 12vw;
+   
+overflow:auto;
+font-size:1vw;/*La letra responsiva o escalable(1% respecto al viewport). */
+z-index: 3; /*queda por encima del 2*/
+}
+
+
+div.clase2 {
+position:absolute;
+background-color: rgb(84, 0, 105)  ;
+top:50%;
+left:50%;
+width:45%;
+height:300px;;
+ 
+overflow:auto;
+font-size:1vw;/*La letra responsiva o escalable(1% respecto al viewport). */
+z-index: 3; /*queda por encima del 2*/
+
+}
+img{
+max-width:100%;
+max-height:100%;
+}
+div.imagen/* <-----------------PARTE DE IMAGEN!!!!---------------->*/
+{   height: 160px;
+    width: 210px;
+    float:left;
+    border:solid sienna;
+    border-width: 2px;
+}
+
+
+            </style>
+            </head>
+    
+    
+    </head>
+
+
+	<body class="body">
+        <div class="cero">
+            <h1>	Contenedores Absolutos 	</h1>
+      
+      <div class="clase3">Contenedor Interno 3   <br/>
+          Contenedor Interno 3   <br/>
+          Contenedor Interno 3   <br/>
+          Contenedor Interno 3   <br/>
+          Contenedor Interno 3   <br/>
+          Contenedor Interno 3   <br/>
+          Contenedor Interno 3   <br/>
+
+          </div>            
+          <div class="clase1"> <h1>Contenedor Interno 1 </h1> 
+            Contenedor Interno 1       <br/>
+            Contenedor Interno 1       <br/>
+            Contenedor Interno 1       <br/>
+            Contenedor Interno 1       <br/>
+            Contenedor Interno 1       <br/>
+  
+            </div>        
+            <div class="clase2"> <h1>Contenedor Interno 1 </h1> 
+                <div class="imagen"> <img class="img" src="imagen.jpg"  > </div>
+                <div class="imagen"> <img class="img" src="imagen.jpg"  > </div>
+                <div class="imagen"> <img class="img" src="imagen.jpg"  > </div>
+      
+                </div>             
+ 
+     </div>
+    <center> <a href="../index.html" > Volver </a></center> 
+	</body>
+
+</html>
