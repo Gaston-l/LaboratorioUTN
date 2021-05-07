@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html  lang="es">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<title>Laboratorio III</title>
+        <style>
+
+html, body {
+height:100%;
+margin:0px;
+background-color: rgb(214, 214, 240)  ;
+}
+*{padding: 0px;
+margin: 0px;
+
+}
+
+div.cero{
+    height:90%;
+     width: 100%;
+    background-color: rgb(120, 120, 136)  ;
+    overflow: auto;
+
+
+}
+
+div.uno{
+            float: left;
+            height: 200px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(0, 0, 0);
+     
+        }
+
+
+        @media (min-width:900px){
+            .uno{
+                width: 20%;
+            }
+        }
+        @media (max-width:700px){
+            .uno{
+                width: 50%;
+            }
+        }
+
+        @media (min-width:700px) and (max-width:900px){
+            .uno{
+                width: 25%;
+            }
+        }
+
+
+ label {
+display:block;
+}
+div.barraControl {
+display:block;
+display: flex;
+justify-content: center;
+align-items: center;
+width:100%;
+height:30%;
+float: left;
+background-color: gray;
+}
+.boton {
+width:100px;
+height:100px;
+background-color:#AAAAAA;
+cursor:pointer;
+}
+form {
+height:80%;
+width:100%;
+overflow:auto;
+}
+
+           </style>
+           </head>
+    </head>
+
+    <body class="body">
+        <h1>FORMULARIO</h1>
+        <div class="cero">
+           
+            <form  action="respuesta.html" method="get">
+            <div class="uno"><label for="apellido">1 Apellido</label>
+            <input type="text" placeholder="Ingrese su Apellido" id="apellido" name="Ape" /></div>
+            <div class="uno"><label for="nombre">2 Nombre</label>
+            <input type="text" placeholder="Ingrese su Apellido" id="nombre" name="nom" /></div>
+            <div class="uno"><label for="pass">3 Contraseña</label>
+                <input type="password" placeholder="Ingrese su Contraseña" id="pass" name="Contraseña" /></div>
+            <div class="uno"><label for="Deshabilitad">4 Campo Deshabilitado</label>
+                <input type="text" placeholder="Campo Deshabilitado" id="Deshabilitado" disabled="" name="contraseña" /></div>
+            <div class="uno"><label style="font-weight: bold" for="fecha">Fecha y Hora</label>
+                <input type="date" name="fecha"><input type="time" name="time">></div>
+            <div class="uno"><label for="dni">6 DNI</label>
+                <input type="number" pattern="[0-9]{8}" id="dni" name="dni" /></div>
+            <div class="uno"><label for="">7 Actividades Extra curriculares</label> 
+                <label for="musica">Musica</label>
+                <input type="checkbox" id="musica" name="" />
+                <label for="musica">Pintura Artistica</label>
+                <input type="checkbox" id="musica" name="" />
+                <label for="apellido">Deporte</label>
+                <input type="checkbox" id="musica" name="" />
+                <label for="apellido">Teatro</label>
+                <input type="checkbox" id="musica" name="" /></div>
+                <div class="uno"><label for="sexo">8 Sexo</label>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="femenino " name="sexo" value="M" checked="checked"/>
+                <label for="masculino">Femenino</label>
+                <input type="radio" id="masculino" name="sexo" value="F" /></div>
+            <div class="uno"><label for="apellido">9 Vacio</label></div>
+            <div class="uno">
+                <label style="font-weight: bold" for="Estudios">10 Estudios Cursados</label>
+				<select id="estudios" name="Estudios">
+					<option value="pri" selected="selected" >Primarios</option>
+					<option value="sec">Secundarios</option>
+					<option value="ter">Terciarios</option>
+					<option value="pos">Posgrado</option>
+				</select></div>
+                <div class="uno">
+                    <label style="font-weight: bold" for="Estudios">11 Area de desempeño</label>
+                    <select id="estudios" name="Estudios">
+                        <option value="admin" selected="selected" >Administracion</option>
+                        <option value="sop">Soporte</option>
+                        <option value="ate">Atencion</option>
+                     </select></div>
+                    <div class="uno">
+                    <label style="font-weight: bold" for="turno">12 Turno</label>
+                    <select id="turno" name="Turno">
+                        <option value="mana" selected="selected" >Mañana</option>
+                        <option value="tard">Tarde</option>
+                        <option value="noch">Noche</option>
+                    </select></div>
+                    <div class="uno"><label for="sexo">13 Conduce</label>
+                        <label for="si">Si</label>
+                        <input type="radio" id="femenino " name="si" value="Si" checked="checked"/>
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="sexo" value="no" /></div>
+                        <footer>
+                            <div class="barraControl">
+                            <button class="boton">Enviar</button>
+                            <button type="reset" class="boton">Reset</button>
+                        </div>
+                        </footer>
+                       </form>
+                    </div>
+        
+        <footer><H2>PIE DE FORMULAR</H2></footer>
+	</body>
+
+</html>
