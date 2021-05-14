@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html  lang="es">
+
+	<head>
+		<title>Laboratorio III</title>
+
+		<style>
+*{padding: 0px;
+margin: 0px;
+}
+			div.cero{
+				width: 400px;
+            height: 200px;
+			background-color: rgb(120, 120, 136)  ;
+
+      
+			}
+			.footer{
+				margin-bottom: 0px;
+			}
+			label {
+display:block;
+}
+
+
+		</style>
+	</head>
+
+
+	<body>
+		<h1> Convertir a Mayusculas 	</h1>
+		<div class="cero">
+
+			<label for="nom">Nombre</label>
+			<input type="text" id="nom">
+		
+		<label for="ape">Apellido</label>
+		<input type="text" id="ape">
+
+
+		<script>
+
+document.getElementById("nom").onchange= function() {
+this.value = this.value.toUpperCase();
+}
+
+document.getElementById("ape").onchange= function() {
+this.value = this.value.toUpperCase();
+}
+
+
+
+		</script>
+
+	</div>
+	
+	<footer class="footer">	<a href="../index.html" > Volver </a> </footer>
+	</body>
+
+</html>
