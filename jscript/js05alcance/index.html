@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html  lang="es">
+
+	<head>
+		<title>Laboratorio III</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<style>
+			.button{
+				width: 30%;
+			}
+		</style>
+	</head>
+
+
+	<body>
+		<h1>	JS Alcance 	</h1>
+	
+		<button class="button" onclick="incorrecta()" >Ingreso Invalido </button>
+		
+		<button class="button" onclick="correcta()" >Ingreso Valido </button>
+
+		<button class="button" onclick="muestra()" >Mirar </button>
+	
+	<script>
+		 var glob;
+		function incorrecta ()
+		{
+			var glob=prompt("ingrese un numero");
+			alert('El valor de la variable ingresado es'+ glob);
+			alert(typeof glob);
+			return;
+		}
+		function correcta ()
+		{
+			glob=prompt("ingrese un numero");
+			alert('El valor de la variable ingresado es'+ glob);
+			alert(typeof glob);
+			return;
+		}	
+		function muestra()
+		{
+			if(glob==undefined)
+			alert('La variable no tiene valor');
+			else
+			alert(glob);
+			return;
+		}
+
+       
+    </script>
+
+
+	</body>
+
+</html>

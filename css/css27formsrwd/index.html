@@ -56,7 +56,7 @@ div.uno{
  label {
 display:block;
 }
-div.barraControl {
+.footer{
 display:block;
 display: flex;
 justify-content: center;
@@ -85,7 +85,7 @@ overflow:auto;
     <body class="body">
         <h1>FORMULARIO</h1>
         <div class="cero">
-           
+
             <form  action="respuesta.html" method="get">
             <div class="uno"><label for="apellido">1 Apellido</label>
             <input type="text" placeholder="Ingrese su Apellido" id="apellido" name="Ape" /></div>
@@ -141,14 +141,13 @@ overflow:auto;
                         <input type="radio" id="femenino " name="si" value="Si" checked="checked"/>
                         <label for="no">No</label>
                         <input type="radio" id="no" name="sexo" value="no" /></div>
-                        <footer>
-                            <div class="barraControl">
-                            <button class="boton">Enviar</button>
-                            <button type="reset" class="boton">Reset</button>
-                        </div>
-                        </footer>
-                       </form>
+                        <footer class="footer">
+                            <button id="as" class="boton">Enviar</button>
+                            <button id="as" type="reset" class="boton">Reset</button>
+                    </footer>
+                      
                     </div>
+                </form>
         
         <footer><H2>PIE DE FORMULAR</H2></footer>
 	</body>

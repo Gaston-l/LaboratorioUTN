@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html  lang="es">
+
+	<head>
+		<title>Laboratorio III</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<style>
+			.button{
+				width: 30%;
+			}
+		</style>
+	</head>
+
+
+	<body>
+		<h1>	Operaciones Sobre Input 	</h1>
+		<h2>	Introducir un valor en el cuadrado de texto y luego pulsar el boton para ejecutar el procedimiento correspondiente 	</h2>
+	
+		<input type="text" id="x" >
+		<button id="muestra">Mirar </button>
+		<button id="suma">Suma 1 </button>
+		<button id="potencia">x 2</button>
+		<button id="mul">Multiplica x 2</button>
+		<button id="elev">2**x</button>
+
+	
+	<script>
+			document.getElementById("muestra").onclick=function(){
+			alert(document.getElementById("x").value); 
+			}
+
+			document.getElementById("suma").onclick=function(){
+				var sum;
+			sum=parseInt(document.getElementById('x').value);
+			sum=sum+1;
+			document.write.getElementById('x').sum;
+					}
+
+			document.getElementById("potencia").onclick=function(){
+				var pot;
+			pot=parseInt(document.getElementById('x').value);
+			pot=pot*pot
+				return x=sum;
+			}
+
+			document.getElementById("mul").onclick=function(){
+				var mul;
+			mul=parseInt(document.getElementById('x').value);
+			mul=mul*2
+				return x=sum;
+			}
+			document.getElementById("elev").onclick=function(){
+				var el;
+				var i;
+				var aux;
+				aux=1;
+			el=parseInt(document.getElementById('x').value);
+			for (let i = 0; i < el; i++) {
+				aux=aux*2;				
+			}
+				return x=sum;
+			}
+
+
+
+       
+    </script>
+
+
+	</body>
+
+</html>
