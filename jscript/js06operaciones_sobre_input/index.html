@@ -33,21 +33,22 @@
 				var sum;
 			sum=parseInt(document.getElementById('x').value);
 			sum=sum+1;
-			document.write.getElementById('x').sum;
-					}
+			
+			document.getElementById("x").value=sum;		}
 
 			document.getElementById("potencia").onclick=function(){
 				var pot;
 			pot=parseInt(document.getElementById('x').value);
 			pot=pot*pot
-				return x=sum;
+			document.getElementById("x").value=pot;		
+		
 			}
 
 			document.getElementById("mul").onclick=function(){
 				var mul;
 			mul=parseInt(document.getElementById('x').value);
 			mul=mul*2
-				return x=sum;
+			document.getElementById("x").value=mul;		
 			}
 			document.getElementById("elev").onclick=function(){
 				var el;
@@ -58,8 +59,8 @@
 			for (let i = 0; i < el; i++) {
 				aux=aux*2;				
 			}
-			alert(aux)
-				return x=sum;
+			
+			document.getElementById("x").value=aux;		
 			}
 
 
